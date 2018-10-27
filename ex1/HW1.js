@@ -13,9 +13,13 @@ function add ()
 
 function delta (q,w)
 {
-	if (q*1>w*1)
+	if (q*1 > w*1)
 	{
 		r = q - w
+	}
+	else if (q == w)
+	{
+		r = "числа рівні"
 	}
 	else
 	{
@@ -28,6 +32,65 @@ function action ()
 {
 	a = document.getElementById ("data").value  
 	b = document.getElementById ("data2").value
-	c = delta (a,b)
+	q = document.getElementById ("norman").value
+	c = dia (a,q,b)
+	test2 ()
 	document.getElementById ("result").value = c
+
+}
+function dia (z,dd,n)
+{
+	if (dd == "-")
+	{
+		r = z - n
+	}	
+	else if (dd == "+")
+	{
+		r = z + n
+	}	
+	else if (dd == "*")
+	{
+		r = z * n
+	}	
+	else if (dd == "/")
+	{
+		r = z / n
+	}	
+	else if (dd == "and")
+	{
+		r = z & n
+	}	
+	else if (dd == "or")
+	{
+		r = z | n
+	}	
+	else if (dd == "%")
+	{
+		r = z % n
+	}	
+	return r
+}
+
+function test1 ()
+{
+	var x = 1;
+    var z;
+	for(z = 6; z >= 2; z--)
+		x = x + z;
+	
+	alert ("x =" + x);
+	alert ("z =" + z);
+}
+
+function test2 ()
+{
+	var x = 0
+	var z = 5
+	while (z > 1 )
+	{
+	x = x + ~~ (1 / z);
+	z = z - 1;
+	}
+	alert("x =" + x);
+	alert("z =" + z);
 }
