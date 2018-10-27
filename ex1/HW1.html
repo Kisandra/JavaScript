@@ -6,11 +6,20 @@
 <meta charset="utf-8">
 <body>
 <script type="text/javascript" src="HW1.js"></script>
-Data:  <input type="text" id="data">
+Data:  <input type="number" id="data">
+<select>
+  <option value="+">+</option>
+  <option value="-">-</option>
+  <option value="*">*</option>
+  <option value="/">/</option>
+  <option value="and">and</option>
+  <option value="or">or</option>
+</select id ="select"> 
+Data 2:  <input type="text" id="data2"> 
 <br>
-<button id="run">Run</button>
+<button onclick="action()" id="run">Run</button >
 <hr>
-Result:  <input type="text"id="result">
+Result:  <input type = "text" id="result" readonly>
 
 
 </body>
