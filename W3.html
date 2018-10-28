@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can show hidden HTML elements.</p>
+
+<p id="demo" style="display:none">Hello JavaScript!</p>
+<p id="omed" style="display:none"> JavaScript!</p>
+<p id="java" style="display:none"> Java</p>
+<p id="script" style="display:none"> Script!</p>
+<p id="!!!" style="display:none"> !!!</p>
+
+<button type="button" onclick="hide('demo','omed','java','script','!!!')">Click Me!</button>
+
+<script> 
+
+ 
+function hide(id,id2,id3,id4,id5)
+{
+  if(document.getElementById(id).style.display == 'none')
+  {
+	if (document.getElementById(id2).style.display == 'none')
+	{
+		if (document.getElementById(id3).style.display == 'none')
+		{
+			if (document.getElementById(id4).style.display == 'none')
+			{
+				if (document.getElementById(id5).style.display == 'none')
+			    {
+			    	document.getElementById(id).style.display ='block'
+			    	document.getElementById(id2).style.display ='none'
+					document.getElementById(id3).style.display ='none'
+					document.getElementById(id4).style.display ='none'
+					document.getElementById(id5).style.display ='none'
+				}
+				else
+				{
+					document.getElementById(id).style.display ='none'
+			    	document.getElementById(id2).style.display ='none'
+					document.getElementById(id3).style.display ='none'
+					document.getElementById(id4).style.display ='none'
+					document.getElementById(id5).style.display ='none'
+				}
+			}
+			else 
+			{
+				document.getElementById(id).style.display ='none'
+			    document.getElementById(id2).style.display ='none'
+				document.getElementById(id3).style.display ='none'
+				document.getElementById(id4).style.display ='none'
+				document.getElementById(id5).style.display ='block'
+			}
+		}
+		else
+		{
+			document.getElementById(id).style.display ='none'
+			document.getElementById(id2).style.display ='none'
+			document.getElementById(id3).style.display ='none'
+			document.getElementById(id4).style.display ='block'
+			document.getElementById(id5).style.display ='none'
+		}		
+	}
+	else
+	{
+		document.getElementById(id).style.display ='none'
+		document.getElementById(id2).style.display ='none'
+		document.getElementById(id3).style.display ='block'
+		document.getElementById(id4).style.display ='none'
+		document.getElementById(id5).style.display ='none'
+	}
+  }
+  else
+  {
+  	document.getElementById(id).style.display ='none'
+	document.getElementById(id2).style.display ='block'
+	document.getElementById(id3).style.display ='none'
+	document.getElementById(id4).style.display ='none'
+	document.getElementById(id5).style.display ='none'
+  }
+
+}
+
+
+</script>
+
+</body>
+</html> 

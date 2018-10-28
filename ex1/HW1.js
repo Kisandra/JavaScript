@@ -34,7 +34,7 @@ function action ()
 	b = document.getElementById ("data2").value
 	q = document.getElementById ("norman").value
 	c = dia (a,q,b)
-	test2 ()
+	dia ()
 	document.getElementById ("result").value = c
 
 }
@@ -94,3 +94,4 @@ function test2 ()
 	alert("x =" + x);
 	alert("z =" + z);
 }
+
