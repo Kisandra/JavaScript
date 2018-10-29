@@ -6,13 +6,13 @@
 
 <p>JavaScript can show hidden HTML elements.</p>
 
-<p id="demo" style="display:none">Hello JavaScript!</p>
-<p id="omed" style="display:none"> JavaScript!</p>
-<p id="java" style="display:none"> Java</p>
-<p id="script" style="display:none"> Script!</p>
-<p id="!!!" style="display:none"> !!!</p>
+<p id="demo">Hello JavaScript!</p>
+<p id="omed"> JavaScript!</p>
+<p id="java"> Java</p>
+<p id="script"> Script!</p>
+<p id="!!!"> !!!</p>
 
-<button type="button" onclick="hide('demo','omed','java','script','!!!')">Click Me!</button>
+<button type="button" onclick="click(document.getElementById('demo'),document.getElementById('omed'),document.getElementById('java'),document.getElementById('scipt'),document.getElementById('!!!'))">Click Me!</button>
 
 <script> 
 
@@ -81,6 +81,20 @@ function hide(id,id2,id3,id4,id5)
   }
 
 }
+
+function click (el,el2,el3,el4,el5)
+{
+	a = el5.innerHTML
+	el2.innerHTML = el.innerHTML
+	el3.innerHTML = el2.innerHTML
+	el4.innerHTML = el3.innerHTML 
+	el5.innerHTML = el4.innerHTML
+	el.innerHTML = a
+}
+
+
+
+
 
 
 </script>
